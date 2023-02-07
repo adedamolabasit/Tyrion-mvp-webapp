@@ -8,7 +8,7 @@ import Button from "../../components/Button";
 function DashHome() {
   return (
     // container
-    <div className="container md:ml-[75px] w-full">
+    <div className="container md:w-[1080px] md:mt-[-50px] md:pt-[59px] md:pl-[90px] md:pr-[71px] bg-[#FCFCF6] ">
       <select
         name=""
         id=""

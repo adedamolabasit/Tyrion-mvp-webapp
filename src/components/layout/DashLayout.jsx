@@ -8,7 +8,7 @@ function dashLayout({ children }) {
   return (
     <div className="flex items-start w-screen h-full">
       <SidebarNew />
-      <div className="md:pl-[36px] ">
+      <div className="">
         {/* large screen navigation*/}
         <div className="hidden md:block">
           <DashNav />

@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import profile from "../../assets/profile.svg";
 import profile2 from "../../assets/profile2.svg";
 
 function Trading() {
+  const [switchButton, setSwitchButton] = useState(false);
+
+  // const handleSwitch = () => {
+  //   setSwitchButton(prevSwitch) => !prevSwitch
+  // };
+
   const transactionDetails = [
     {
       id: 1,
@@ -55,10 +61,16 @@ function Trading() {
         {/* upper left flex */}
         <div>
           <div className="md:mb-[81px]">
-            <button className="ml-[35px] bg-[#FBC108DC] w-[83px] md:w-[158px] h-[27px] md:h-[56px] text-white rounded-[4px] md:rounded-lg text-xs md:text-base ">
+            <button
+              className="ml-[35px] bg-[#FBC108DC] w-[83px] md:w-[158px] h-[27px] md:h-[56px] text-white rounded-[4px] md:rounded-lg text-xs md:text-base "
+              // onClick={handleSwitch}
+            >
               Buy Tyrion
             </button>
-            <button className="border-[#FBC108DC] ml-[-5px] md:ml-[-10px] border-[1px] border-solid w-[83px] md:w-[158px] h-[27px] md:h-[56px] rounded-[4px] md:rounded-lg text-xs md:text-base ">
+            <button
+              className="border-[#FBC108DC] ml-[-5px] md:ml-[-10px] border-[1px] border-solid w-[83px] md:w-[158px] h-[27px] md:h-[56px] rounded-[4px] md:rounded-lg text-xs md:text-base "
+              // onClick={handleSwitch}
+            >
               Sell Tyrion
             </button>
           </div>
