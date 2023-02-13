@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import profile from "../../assets/profile.svg";
 import profile2 from "../../assets/profile2.svg";
+import BuyCheckout from "../../components/BuyCheckout";
+import ProceedToTrade from "./ProceedToTrade";
 
 function Trading() {
   const [switchButton, setSwitchButton] = useState(false);
@@ -8,6 +10,17 @@ function Trading() {
   // const handleSwitch = () => {
   //   setSwitchButton(prevSwitch) => !prevSwitch
   // };
+
+  const [checkout, setCheckout] = useState(false);
+  const [trade, setTrade] = useState(false);
+
+  const handleCheckout = () => {
+    setCheckout(true);
+  };
+
+  const handleTrade = () => {
+    setTrade(true);
+  };
 
   const transactionDetails = [
     {
@@ -158,12 +171,17 @@ function Trading() {
               <h6 className="text-[#0000005e] ">Range:</h6>
               <small className="font-bold">{transaction.range}</small>
             </div>
-            <button className="w-[108px] h-[38px] bg-[#FBC108DC] rounded-lg text-white ">
+            <button
+              className="w-[108px] h-[38px] bg-[#FBC108DC] rounded-lg text-white "
+              onClick={handleCheckout}
+            >
               Buy Card
             </button>
           </div>
         ))}
       </div>
+      {checkout && <BuyCheckout />}
+      {trade && <ProceedToTrade />}
     </div>
   );
 }

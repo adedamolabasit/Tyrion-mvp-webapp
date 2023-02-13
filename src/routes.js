@@ -137,15 +137,7 @@ const RoutesObjects = [
       </DashLayout>
     ),
   },
-  {
-    id: 14,
-    path: "/transactions",
-    element: (
-      <DashLayout>
-        <Transactions />
-      </DashLayout>
-    ),
-  },
+
   {
     id: 15,
     path: "/trading",
