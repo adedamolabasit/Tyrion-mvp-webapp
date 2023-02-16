@@ -16,7 +16,6 @@ import DashLayout from "./components/layout/DashLayout";
 import DashHome from "./pages/dashboard/DashHome";
 import Wallet from "./pages/dashboard/Wallet";
 import Contact from "./pages/dashboard/Contact";
-import Transactions from "./pages/dashboard/Transactions";
 import Trading from "./pages/dashboard/Trading";
 import SingleProduct from "./pages/shop/SingleProduct";
 import CreateProfile from "./pages/shop/CreateProfile";
@@ -24,6 +23,7 @@ import SwapInterface from "./pages/dashboard/SwapInterface";
 import Withdraw from "./pages/dashboard/Withdraw";
 import WalletBarcode from "./components/WalletBarcode";
 import BuyCheckout from "./components/BuyCheckout";
+import TradeCompleted from "./pages/dashboard/TradeCompleted";
 
 const RoutesObjects = [
   {
@@ -180,6 +180,11 @@ const RoutesObjects = [
     id: 21,
     path: "/buytyrion",
     element: <BuyCheckout />,
+  },
+  {
+    id: 22,
+    path: "/completed",
+    element: <TradeCompleted />,
   },
 ];
 
