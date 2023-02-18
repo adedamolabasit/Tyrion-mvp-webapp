@@ -3,6 +3,7 @@ import Button from "./Button";
 import move from "../../src/assets/move.svg";
 
 function BuyCheckout() {
+  // hello dev
   return (
     <div className="bg-[#EAEAEA] h-full w-screen flex items-center justify-center  ">
       <div className="md:py-[115px] md:px-[65px] bg-white md:w-[672px] md:h-[797px] rounded-lg  ">
