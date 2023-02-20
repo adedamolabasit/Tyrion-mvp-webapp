@@ -1,0 +1,20 @@
+products=[
+    {
+        'id':1,
+        'name':"laptop",
+        'price':23,
+        'instock':True
+    },
+    {
+        'id':2,
+        'name':"car",
+        'price':313,
+        'instock':False
+    },
+    {
+        'id':3,
+        'name':"Phone",
+        'price':21,
+        'instock':True
+    }
+    ]
